@@ -29,21 +29,175 @@ namespace _20220328
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox_receivePort = new System.Windows.Forms.TextBox();
+            this.textBox_receiveMsg = new System.Windows.Forms.TextBox();
+            this.textBox_targetIP = new System.Windows.Forms.TextBox();
+            this.textBox_targetPort = new System.Windows.Forms.TextBox();
+            this.textBox_sendMsg = new System.Windows.Forms.TextBox();
+            this.button_startListen = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "接聽Port";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Location = new System.Drawing.Point(12, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "接收文字";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.Location = new System.Drawing.Point(29, 122);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 21);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "目標IP";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label4.Location = new System.Drawing.Point(12, 160);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 21);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "目標Port";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label5.Location = new System.Drawing.Point(12, 198);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 21);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "傳送文字";
+            // 
+            // textBox_receivePort
+            // 
+            this.textBox_receivePort.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox_receivePort.Location = new System.Drawing.Point(112, 10);
+            this.textBox_receivePort.Name = "textBox_receivePort";
+            this.textBox_receivePort.Size = new System.Drawing.Size(100, 29);
+            this.textBox_receivePort.TabIndex = 5;
+            // 
+            // textBox_receiveMsg
+            // 
+            this.textBox_receiveMsg.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox_receiveMsg.Location = new System.Drawing.Point(113, 50);
+            this.textBox_receiveMsg.Name = "textBox_receiveMsg";
+            this.textBox_receiveMsg.Size = new System.Drawing.Size(319, 29);
+            this.textBox_receiveMsg.TabIndex = 6;
+            // 
+            // textBox_targetIP
+            // 
+            this.textBox_targetIP.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox_targetIP.Location = new System.Drawing.Point(113, 114);
+            this.textBox_targetIP.Name = "textBox_targetIP";
+            this.textBox_targetIP.Size = new System.Drawing.Size(100, 29);
+            this.textBox_targetIP.TabIndex = 7;
+            // 
+            // textBox_targetPort
+            // 
+            this.textBox_targetPort.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox_targetPort.Location = new System.Drawing.Point(112, 152);
+            this.textBox_targetPort.Name = "textBox_targetPort";
+            this.textBox_targetPort.Size = new System.Drawing.Size(100, 29);
+            this.textBox_targetPort.TabIndex = 8;
+            // 
+            // textBox_sendMsg
+            // 
+            this.textBox_sendMsg.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBox_sendMsg.Location = new System.Drawing.Point(113, 190);
+            this.textBox_sendMsg.Name = "textBox_sendMsg";
+            this.textBox_sendMsg.Size = new System.Drawing.Size(320, 29);
+            this.textBox_sendMsg.TabIndex = 9;
+            // 
+            // button_startListen
+            // 
+            this.button_startListen.AutoSize = true;
+            this.button_startListen.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button_startListen.Location = new System.Drawing.Point(438, 48);
+            this.button_startListen.Name = "button_startListen";
+            this.button_startListen.Size = new System.Drawing.Size(84, 31);
+            this.button_startListen.TabIndex = 10;
+            this.button_startListen.Text = "啟動接收";
+            this.button_startListen.UseVisualStyleBackColor = true;
+            this.button_startListen.Click += new System.EventHandler(this.button_startListen_Click);
+            // 
+            // button2
+            // 
+            this.button2.AutoSize = true;
+            this.button2.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button2.Location = new System.Drawing.Point(447, 188);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 31);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "傳送";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(529, 234);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_startListen);
+            this.Controls.Add(this.textBox_sendMsg);
+            this.Controls.Add(this.textBox_targetPort);
+            this.Controls.Add(this.textBox_targetIP);
+            this.Controls.Add(this.textBox_receiveMsg);
+            this.Controls.Add(this.textBox_receivePort);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "UDP即時通";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox_receivePort;
+        private System.Windows.Forms.TextBox textBox_receiveMsg;
+        private System.Windows.Forms.TextBox textBox_targetIP;
+        private System.Windows.Forms.TextBox textBox_targetPort;
+        private System.Windows.Forms.TextBox textBox_sendMsg;
+        private System.Windows.Forms.Button button_startListen;
+        private System.Windows.Forms.Button button2;
     }
 }
 
